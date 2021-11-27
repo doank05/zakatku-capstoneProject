@@ -1,5 +1,6 @@
 import 'regenerator-runtime';
 import '../styles/style.css';
+import '../styles/styleBeranda.css';
 import '../styles/responsive.css';
 import App from './views/app';
 

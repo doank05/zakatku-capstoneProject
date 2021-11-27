@@ -1,0 +1,29 @@
+main .sheet-one .jumbotron img {
+    width: 100%;
+    min-height: 300px;
+}
+
+main .sheet-one .feature{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    text-align: center;
+}
+
+main .sheet-one .feature img{
+    width: 45px;
+    height: 45px;
+}
+
+main .sheet-one .feature h2{
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 5px;
+    color: #2E4C6D;
+}
+
+main .sheet-one .feature p{
+    font-size: 18px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #396EB0;
+}
