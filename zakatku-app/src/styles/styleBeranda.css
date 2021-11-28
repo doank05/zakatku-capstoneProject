@@ -1,29 +1,111 @@
-main .sheet-one .jumbotron img {
+main .fitur-description .jumbotron img {
     width: 100%;
     min-height: 300px;
 }
 
-main .sheet-one .feature{
+main .fitur-description .feature{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 50px;
     text-align: center;
 }
 
-main .sheet-one .feature img{
+main .fitur-description .feature .feature-type {
+    padding: 0 50px;
+}
+
+main .fitur-description .feature img{
     width: 45px;
     height: 45px;
 }
 
-main .sheet-one .feature h2{
+main .fitur-description .feature h2{
     font-size: 25px;
     font-family: 'PT Sans', sans-serif;
     padding-top: 5px;
     color: #2E4C6D;
 }
 
-main .sheet-one .feature p{
+main .fitur-description .feature p{
     font-size: 18px;
     font-family: 'PT Sans Narrow', sans-serif;
     color: #396EB0;
+}
+
+main .application-description p{
+    padding: 0 50px 25px 50px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #396EB0;
+}
+
+main .content .first-content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 50px 0;
+    text-align: center;
+    background-color: #EAEAEA;
+    height: 250px;
+}
+
+main .content .first-content img {
+    width: 250px;
+    padding: 0 100px;
+}
+
+main .content .first-content h2 {
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E4C6D;
+    padding-bottom: 10px;
+}
+
+main .content .first-content p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #396EB0;
+}
+
+main .content .first-content .description-firts-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+/* =============================================== */
+main .content .second-content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 50px 0;
+    text-align: center;
+    height: 250px;
+}
+
+main .content .second-content img {
+    width: 250px;
+    padding: 20px 100px 0 100px;
+}
+
+main .content .second-content h2 {
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E4C6D;
+    padding-bottom: 10px;
+}
+
+main .content .second-content p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #396EB0;
+}
+
+main .content .second-content .description-second-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
 }
