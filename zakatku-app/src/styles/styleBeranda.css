@@ -1,6 +1,6 @@
 main .fitur-description .jumbotron img {
     width: 100%;
-    min-height: 300px;
+    height: 300px;
 }
 
 main .fitur-description .feature{
@@ -40,6 +40,10 @@ main .application-description p{
     color: #396EB0;
 }
 
+main .content .first-content .description-firts-content{
+    padding-right: 20px !important;
+}
+
 main .content .first-content {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -75,13 +79,16 @@ main .content .first-content .description-firts-content {
     padding-right: 100px;
 }
 
-/* =============================================== */
 main .content .second-content {
     display: grid;
     grid-template-columns: repeat(2, auto);
     padding: 50px 0;
     text-align: center;
     height: 250px;
+}
+
+main .content .second-content .description-second-content{
+    padding-left: 20px !important;
 }
 
 main .content .second-content img {
@@ -108,4 +115,56 @@ main .content .second-content .description-second-content {
     flex-direction: column;
     justify-content: center;
     padding-left: 100px;
+}
+
+main .content .third-content {
+    background-color: #EAEAEA;
+    padding-bottom: 50px;
+}
+
+main .content .third-content .head-text h2{
+    padding-top: 30px;
+    font-size: 35px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E4C6D;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+main .content .third-content .artikel-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 50px;
+}
+
+main .content .third-content .artikel-container .artikel-content{
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+main .content .third-content .artikel-container .artikel-content img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main .content .third-content .artikel-container .artikel-content h3{
+    padding: 5px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E4C6D;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+main .content .third-content .artikel-container .artikel-content p{
+    padding: 0 20px 50px 20px;
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #396EB0;
 }

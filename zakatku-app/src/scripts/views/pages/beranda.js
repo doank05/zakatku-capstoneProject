@@ -45,6 +45,28 @@ const Beranda = {
             <img src="logo-content2.png" alt="image-second-content">
           </div>
         </div>
+        <div class="third-content">
+          <div class="head-text">
+            <h2>ARTIKEL</h2>
+          </div>
+          <div class="artikel-container">
+            <div class="artikel-content">
+                <img src="jumbotron1.jpg" alt="content-image">
+                <h3>Judul Artikel</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ea corrupti aperiam delectus, sint quam, exercitationem cumque inventore voluptatem ullam, hic repudiandae eligendi reprehenderit error mollitia obcaecati aut nulla dignissimos?</p>
+            </div>
+            <div class="artikel-content">
+                <img src="jumbotron1.jpg" alt="content-image">
+                <h3>Judul Artikel</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ea corrupti aperiam delectus, sint quam, exercitationem cumque inventore voluptatem ullam, hic repudiandae eligendi reprehenderit error mollitia obcaecati aut nulla dignissimos?</p>
+            </div>
+            <div class="artikel-content">
+                <img src="jumbotron1.jpg" alt="content-image">
+                <h3>Judul Artikel</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ea corrupti aperiam delectus, sint quam, exercitationem cumque inventore voluptatem ullam, hic repudiandae eligendi reprehenderit error mollitia obcaecati aut nulla dignissimos?</p>
+            </div>
+          </div>
+        </div>
       </section>
       `;
   },
