@@ -1,0 +1,18 @@
+.head-page {
+    text-align: center;
+    padding: 20px;
+}
+
+.head-page h1 {
+    font-size: 35px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E4C6D;
+    text-align: center;
+}
+
+.head-page p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #396EB0;
+}

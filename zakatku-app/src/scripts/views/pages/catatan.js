@@ -1,7 +1,10 @@
 const Catatan = {
   async render() {
     return `
-        <h2>Catatan page</h2>
+    <div class="head-page">
+      <h1>CATATAN</h1>
+      <p>Penyimpanan Riwayat Perhitungan Zakat</p>
+    </div>
       `;
   },
 

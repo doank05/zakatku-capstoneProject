@@ -1,8 +1,10 @@
 import 'regenerator-runtime';
 import '../styles/style.css';
 import '../styles/styleBeranda.css';
+import '../styles/styleCatatan.css';
 import '../styles/responsive.css';
 import '../styles/responsiveBeranda.css';
+import '../styles/responsiveCatatan.css';
 import App from './views/app';
 
 const app = new App({
