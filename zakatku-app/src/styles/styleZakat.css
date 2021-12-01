@@ -1,0 +1,104 @@
+.jenis-zakat{
+    width: 100%;
+    height: fit-content;
+    background-color: #EAEAEA;
+}
+
+main .jenis-zakat h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #000000;
+    margin-top: 15px;
+}
+
+main .description-zakat p{
+    padding: 0 50px 25px 50px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #396EB0;
+}
+
+main .jenis-zakat .btn-pilih-zakat {
+    justify-content: center;
+    display: flex;
+}
+
+main .btn-pilih-zakat button{
+    background-color: #cf7611; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 3px;
+    cursor: pointer;
+    
+}
+
+main .btn-pilih-zakat button:hover{
+    background-color: rgb(45, 25, 221);
+}
+
+/* ============================================ */
+main .feature-hitung {
+    width: 100%;
+    height: fit-content;
+}
+
+main .feature-hitung h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #000000;
+    margin-top: 15px;
+}
+
+main .feature-hitung .btn-hitung-zakat {
+    justify-content: center;
+    display: flex;
+}
+
+main .btn-hitung-zakat button{
+    background-color: #cf7611;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 3px;
+    cursor: pointer;
+    
+}
+
+main .btn-pilih-zakat button:hover{
+    background-color: rgb(45, 25, 221);
+}
+
+main .feature-hitung .form {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+main .feature-hitung .form .form-zakat{
+    width: 50%;
+    
+}
+
+main .feature-hitung form input {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+/* =============================================== */
