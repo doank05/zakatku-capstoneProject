@@ -6,6 +6,7 @@ import '../styles/styleZakat.css';
 import '../styles/responsive.css';
 import '../styles/responsiveBeranda.css';
 import '../styles/responsiveCatatan.css';
+import '../styles/responsiveZakat.css';
 import App from './views/app';
 
 const app = new App({

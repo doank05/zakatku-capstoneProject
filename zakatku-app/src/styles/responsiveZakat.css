@@ -1,0 +1,39 @@
+@media screen and (max-width: 850px) {
+    main .jenis-zakat h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main .jenis-zakat h1 {
+        font-size: 30px;
+    }
+    main .jenis-zakat .navigation-zakat {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 10px;
+    }
+    
+    main .jenis-zakat .navigation-zakat .zakat {
+        padding: 25px;
+    }
+    
+    main .jenis-zakat .navigation-zakat a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main .jenis-zakat h1 {
+        font-size: 25px;
+    }
+
+    main .jenis-zakat .navigation-zakat {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main .jenis-zakat h1 {
+        font-size: 20px;
+    }
+}

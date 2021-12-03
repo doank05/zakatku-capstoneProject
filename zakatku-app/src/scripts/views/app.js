@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-underscore-dangle */
 import DrawerInitiator from '../utils/drawer-initiator';
 import UrlParser from '../routes/url-parser';
@@ -18,8 +20,6 @@ class App {
       drawer: this._drawer,
       content: this._content,
     });
-
-    // kita bisa menginisiasikan komponen lain bila ada
   }
 
   async renderPage() {
