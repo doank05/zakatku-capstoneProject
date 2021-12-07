@@ -32,9 +32,6 @@ const Zakat = {
           <a href="#/zakat-rikaz">ZAKAT RIKAZ</a>
         </div>
       </div>
-    </section>
-    
-    <section id="feature-hitung" class="feature-hitung">
     `;
   },
 
