@@ -16,6 +16,8 @@ main .jenis-zakat .navigation-zakat {
 main .jenis-zakat .navigation-zakat .zakat {
     padding: 30px;
     border: 0.1px solid #2E4C6D;
+    margin: 5px;
+    border-radius: 20px;
 }
 
 main .jenis-zakat .navigation-zakat a {

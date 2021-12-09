@@ -10,6 +10,7 @@ import ZakatPertanian from '../views/pages/zakatPertanian';
 import ZakatProfesi from '../views/pages/zakatProfesi';
 import ZakatInvestasi from '../views/pages/zakatInvestasi';
 import ZakatRikaz from '../views/pages/zakatRikaz';
+import ZakatTry from '../views/pages/zakatTry';
 
 const routes = {
   '/': Beranda, // default page
@@ -25,6 +26,7 @@ const routes = {
   '/zakat-profesi': ZakatProfesi,
   '/zakat-investasi': ZakatInvestasi,
   '/zakat-rikaz': ZakatRikaz,
+  '/zakat-try': ZakatTry,
 };
 
 export default routes;
