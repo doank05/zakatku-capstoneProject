@@ -19,7 +19,7 @@ const ZakatEmas = {
       <div class="form">
         <form class="form-zakat">
         <input type="date" id="date" name="date" placeholder="1-Desember-2021"><br>
-        <input type="text" id="idJumlahEmas" name="idJumlahEmas" placeholder="Jumlah Emas"><br>
+        <input type="text" id="idJumlahEmas" name="idJumlahEmas" placeholder="Jumlah Emas = xx gram"><br>
         </form>
       </div>
       <div class="btn-hitung-zakat">
@@ -28,13 +28,34 @@ const ZakatEmas = {
     </section>
 
     <section id="feature-hasil" class="feature-hasil">
-      
+      <div class="item-hasil">
+        <h4>Tanggal     : <span id="tanggal" ></span></h4>
+        <h2>Jumlah Emas : <span id="hasilTabungan"></span></h3>
+        <h2>Total Zakat : <span id="hasil"></span></h3>
+      </div>
     </section>
       `;
   },
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    document.getElementById('btn-hitung-zakat').addEventListener('click', hitungZakat);
+
+    const syarat = 85;
+
+    function hitungZakat() {
+      const jumlahEmas = document.getElementById('idJumlahEmas').value;
+      const date = document.getElementById('date').value;
+      let zakat;
+      if (jumlahEmas >= syarat) {
+        zakat = 0.025 * jumlahEmas;
+      } else {
+        zakat = 'Tidak mencukupi syarat nisab 85 Gram';
+      }
+      document.getElementById('hasil').innerHTML = zakat;
+      document.getElementById('tanggal').innerHTML = date;
+      document.getElementById('hasilTabungan').innerHTML = jumlahEmas;
+    }
   },
 };
 

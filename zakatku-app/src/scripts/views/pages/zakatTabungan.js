@@ -1,3 +1,5 @@
+import { tandaPemisahTitik, numbersonly, bersihPemisah } from './other';
+
 const ZakatTabungan = {
   async render() {
     return `
@@ -14,7 +16,7 @@ const ZakatTabungan = {
       <div class="form">
         <form class="form-zakat">
         <input type="date" id="date" name="date" placeholder="1-Desember-2021"><br>
-        <input type="number" id="idJumlahTabungan" name="idJumlahTabungan" placeholder="Jumlah Tabungan"><br>
+        <input type="number" id="idJumlahTabungan" name="idJumlahTabungan"  placeholder="Jumlah Tabungan Rp"><br>
         </form>
       </div>
       <div class="btn-hitung-zakat">
@@ -24,14 +26,39 @@ const ZakatTabungan = {
     
 
     <section id="feature-hasil" class="feature-hasil">
-      
+      <div class="item-hasil">
+        <h4>Tanggal     : <span id="tanggal" ></span></h4>
+        <h2>Total Tabungan : <span id="hasilTabungan"></span></h3>
+        <h2>Total Zakat : <span id="hasil"></span></h3>
+      </div>
     </section>
       `;
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    // // Fungsi ini akan dipanggil setelah render()
+    document.getElementById('btn-hitung-zakat').addEventListener('click', hitungZakat);
+
+    const syarat = 85 * 821352;
+
+    function hitungZakat() {
+      const jumlahTabungan = document.getElementById('idJumlahTabungan').value;
+      const date = document.getElementById('date').value;
+      let zakat;
+      const formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'IDR',
+      });
+      if (jumlahTabungan >= syarat) {
+        zakat = 0.025 * jumlahTabungan;
+        document.getElementById('hasil').innerHTML = formatter.format(zakat);
+      } else {
+        zakat = 'Tidak mencukupi syarat nisab';
+        document.getElementById('hasil').innerHTML = zakat;
+      }
+      document.getElementById('tanggal').innerHTML = date;
+      document.getElementById('hasilTabungan').innerHTML = jumlahTabungan;
+    }
   },
 };
-
 export default ZakatTabungan;

@@ -15,10 +15,9 @@ const ZakatPertanian = {
       <div class="form">
         <form class="form-zakat">
         <input type="date" id="date" name="date" placeholder="1-Desember-2021">
-        <input type="radio" id="alam" name="dialiri" value="alam"><label for="sapi">Dialiri dengan air hujan, sungai atau mata air</label>
-        <input type="radio" id="buatan" name="dialiri" value="alam"><label for="sapi">dialiri dengan cara disiram (menggunakan alat)</label>
-        
-        <input type="number" id="idJumlahPanen" name="idJumlahPanen" placeholder="Jumlah Panen"><br>
+        <input type="radio" id="dialiriAlam" name="cara" value="dialiriAlam"><label>Dialiri dengan air hujan, sungai atau mata air</label>
+        <input type="radio" id="dialiriAlat" name="cara" value="dialiriAlat"><label>dialiri dengan cara disiram (menggunakan alat)</label>
+        <input type="number" id="idJumlahPanen" name="idJumlahPanen" placeholder="Jumlah Hasil Panen xx Kg setara beras"><br>
         </form>
       </div>
       <div class="btn-hitung-zakat">
@@ -27,13 +26,45 @@ const ZakatPertanian = {
     </section>
 
     <section id="feature-hasil" class="feature-hasil">
-      
+      <div class="item-hasil">
+        <h4>Tanggal     : <span id="tanggal" ></span></h4>
+        <h2>Total Tabungan : <span id="hasilTabungan"></span></h3>
+        <h2>Total Zakat : <span id="hasil"></span></h3>
+      </div>
     </section>
       `;
   },
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    document.getElementById('btn-hitung-zakat').addEventListener('click', hitungZakat);
+    const syaratPanen = 653;
+
+    function hitungZakat() {
+      const jumlahPanen = document.getElementById('idJumlahPanen').value;
+      const cara = document.querySelector('input[name="cara"]:checked').value;
+      const date = document.getElementById('date').value;
+      let zakat;
+      if (cara === 'dialiriAlam') {
+        if (jumlahPanen >= syaratPanen) {
+          zakat = 0.1 * jumlahPanen;
+          document.getElementById('hasil').innerHTML = `${zakat}Kg`;
+        } else {
+          zakat = 'Belum mencukupi nisab panen';
+          document.getElementById('hasil').innerHTML = zakat;
+        }
+      } else if (cara === 'dialiriAlat') {
+        if (jumlahPanen >= syaratPanen) {
+          zakat = 0.05 * jumlahPanen;
+          document.getElementById('hasil').innerHTML = `${zakat}Kg`;
+        } else {
+          zakat = 'Belum mencukupi nisab panen';
+          document.getElementById('hasil').innerHTML = zakat;
+        }
+      }
+      document.getElementById('tanggal').innerHTML = date;
+      document.getElementById('hasilTabungan').innerHTML = jumlahPanen;
+    }
   },
 };
 

@@ -109,4 +109,25 @@ main .feature-hitung form input {
     margin-top: 10px;
 }
 
-/* =============================================== */
+/* ==========HASIL=================== */
+
+main .feature-hasil  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+}
+
+main .feature-hasil .item-hasil  {
+    border-radius: 16px;
+    background: rgb(143, 141, 141);
+    width: 70%;
+}
+
+.item-hasil  h4  {
+    color: white;
+}
+
+
+
+

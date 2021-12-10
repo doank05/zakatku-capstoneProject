@@ -25,13 +25,39 @@ const ZakatPerdagangan = {
     </section>
 
     <section id="feature-hasil" class="feature-hasil">
-      
+      <div class="item-hasil">
+        <h4>Tanggal     : <span id="tanggal" ></span></h4>
+        <h2>Total Tabungan : <span id="hasilTabungan"></span></h3>
+        <h2>Total Zakat : <span id="hasil"></span></h3>
+      </div>
     </section>
       `;
   },
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    document.getElementById('btn-hitung-zakat').addEventListener('click', hitungZakat);
+
+    const syarat = 85 * 821352;
+
+    function hitungZakat() {
+      const jumlahKeuntungan = document.getElementById('idJumlahKeuntungan').value;
+      const date = document.getElementById('date').value;
+      let zakat;
+      const formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'IDR',
+      });
+      if (jumlahKeuntungan >= syarat) {
+        zakat = 0.025 * jumlahKeuntungan;
+        document.getElementById('hasil').innerHTML = formatter.format(zakat);
+      } else {
+        zakat = 'Tidak mencukupi syarat nisab';
+        document.getElementById('hasil').innerHTML = zakat;
+      }
+      document.getElementById('tanggal').innerHTML = date;
+      document.getElementById('hasilTabungan').innerHTML = jumlahKeuntungan;
+    }
   },
 };
 

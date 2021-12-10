@@ -2,7 +2,7 @@ const ZakatProfesi = {
   async render() {
     return `
       <section id="kategori-zakat" class="kategori-zakat">
-      <h1 class="header-kategori-zakat">ZAKAT PERTANIAN</h1>
+      <h1 class="header-kategori-zakat">ZAKAT PROFESI</h1>
       <div class="description-zakat" id="description-zakat">
         <p>Zakat penghasilan atau yang dikenal juga sebagai zakat profesi; zakat pendapatan adalah bagian dari zakat mal yang wajib dikeluarkan atas harta yang
          berasal dari pendapatan / penghasilan rutin dari pekerjaan yang tidak melanggar syariah.
@@ -17,7 +17,6 @@ const ZakatProfesi = {
           <form class="form-zakat">
           <input type="date" id="date" name="date" placeholder="1-Desember-2021">
           <input type="number" id="idJumlahPenghasilan" name="idJumlahPenghasilan" placeholder="Jumlah Penghasilan 1 Tahun"><br>
-          <input type="number" id="idJumlahPengeluaran" name="idJumlahPengeluaran" placeholder="Jumlah Pengeluaran 1 Tahun">
           </form>
         </div>
         <div class="btn-hitung-zakat">
@@ -26,13 +25,40 @@ const ZakatProfesi = {
       </section>
 
       <section id="feature-hasil" class="feature-hasil">
-        
-      </section>
+      <div class="item-hasil">
+        <h4>Tanggal     : <span id="tanggal" ></span></h4>
+        <h2>Total Tabungan : <span id="hasilTabungan"></span></h3>
+        <h2>Total Zakat : <span id="hasil"></span></h3>
+      </div>
+    </section>
       `;
   },
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    document.getElementById('btn-hitung-zakat').addEventListener('click', hitungZakat);
+
+    const syarat = 85 * 821352;
+
+    function hitungZakat() {
+      const jumlahPenghasilan = document.getElementById('idJumlahPenghasilan').value;
+      const date = document.getElementById('date').value;
+
+      let zakat;
+      const formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'IDR',
+      });
+      if (jumlahPenghasilan >= syarat) {
+        zakat = 0.025 * jumlahPenghasilan;
+        document.getElementById('hasil').innerHTML = `${formatter.format(zakat)} /Tahun`;
+      } else {
+        zakat = 'Tidak mencukupi syarat nisab';
+        document.getElementById('hasil').innerHTML = zakat;
+      }
+      document.getElementById('tanggal').innerHTML = date;
+      document.getElementById('hasilTabungan').innerHTML = jumlahPenghasilan;
+    }
   },
 };
 

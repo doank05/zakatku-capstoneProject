@@ -19,9 +19,11 @@ const ZakatTernak = {
       <div class="form">
         <form class="form-zakat">
         <input type="date" id="date" name="date" placeholder="1-Desember-2021"><br>
-        <input type="radio" id="sapi" name="hewan" value="sapi"><label for="sapi">Sapi/Kerbau</label><br>
-        <input type="radio" id="domba" name="hewan" value="sapi"><label for="sapi">Sapi/Kerbau</label><br>
-        <input type="radio" id="domba" name="hewan" value="domba"><label for="domba">Domba/Kambing</label><br>
+        <div id="hewans">
+          <input type="radio" id="sapi" name="hewan" value="sapi"><label for="sapi">Sapi/Kerbau</label><br>
+          <input type="radio" id="domba" name="hewan" value="domba"><label for="domba">Domba/Kambing</label><br>
+          <input type="radio" id="unta" name="hewan" value="unta"><label for="sapi">Unta</label><br>
+        </div>
         <input type="number" id="idJumlahHewan" name="idJumlahHewan" placeholder="Jumlah Hewan"><br>
         </form>
       </div>
@@ -31,13 +33,51 @@ const ZakatTernak = {
     </section>
 
     <section id="feature-hasil" class="feature-hasil">
-      
+      <div class="item-hasil">
+        <h4>Tanggal     : <span id="tanggal" ></span></h4>
+        <h2>Total Tabungan : <span id="hasilTabungan"></span></h3>
+        <h2>Total Zakat : <span id="hasil"></span></h3>
+      </div>
     </section>
       `;
   },
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    document.getElementById('btn-hitung-zakat').addEventListener('click', hitungZakat);
+    const syaratSapi = 30;
+    const syaratDomba = 40;
+    const syaratUnta = 5;
+
+    function hitungZakat() {
+      const jumlahHewan = document.getElementById('idJumlahHewan').value;
+      const hewan = document.querySelector('input[name="hewan"]:checked').value;
+      const date = document.getElementById('date').value;
+
+      let zakat;
+      if (hewan === 'unta') {
+        if (jumlahHewan >= syaratUnta) {
+          zakat = 'unta';
+        } else {
+          zakat = 'Belum mencukupi nisab unta';
+        }
+      } else if (hewan === 'sapi') {
+        if (jumlahHewan >= syaratSapi) {
+          zakat = 'sapi';
+        } else {
+          zakat = 'Belum mencukupi nisab sapi';
+        }
+      } else if (hewan === 'domba') {
+        if (jumlahHewan >= syaratDomba) {
+          zakat = 'unta';
+        } else {
+          zakat = 'Belum mencukupi nisab unta';
+        }
+      }
+      document.getElementById('hasil').innerHTML = zakat;
+      document.getElementById('tanggal').innerHTML = date;
+      document.getElementById('hasilTabungan').innerHTML = jumlahHewan;
+    }
   },
 };
 
