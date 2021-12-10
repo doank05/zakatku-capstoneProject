@@ -1,5 +1,3 @@
-import { tandaPemisahTitik, numbersonly, bersihPemisah } from './other';
-
 const ZakatTabungan = {
   async render() {
     return `
