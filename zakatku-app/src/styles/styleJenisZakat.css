@@ -1,20 +1,18 @@
 .kategori-zakat{
     width: 100%;
-    height: fit-content;
-    background-color: #EAEAEA;
 }
 
 main .kategori-zakat h1 {
+    font-size: 35px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E4C6D;
     text-align: center;
-    font-size: 30px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    color: #000000;
-    margin-top: 15px;
+    padding: 20px 0 10px 0;
 }
 
 main .description-zakat p{
     padding: 0 50px 25px 50px;
-    text-align: left;
+    text-align: justify;
     font-size: 18px;
     font-family: 'PT Sans Narrow', sans-serif;
     color: #396EB0;
@@ -33,25 +31,6 @@ main .jenis-zakat .btn-kategori-zakat {
     display: flex;
 }
 
-main .btn-kategori-zakat button{
-    background-color: #cf7611; /* Green */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 3px;
-    cursor: pointer;
-    
-}
-
-main .btn-kategori-zakat button:hover{
-    background-color: rgb(45, 25, 221);
-}
-
 /* ============================================ */
 main .feature-hitung {
     width: 100%;
@@ -61,9 +40,48 @@ main .feature-hitung {
 main .feature-hitung h1 {
     text-align: center;
     font-size: 30px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    color: #000000;
-    margin-top: 15px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E4C6D;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+main .feature-hitung .form .radio-input{
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E4C6D;
+    text-align: left;
+}
+
+main .feature-hitung .form .radio-input .radio-input-first{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .feature-hitung .form .radio-input .radio-input-second{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .feature-hitung .form .radio-input .radio-input-third{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .feature-hitung .form .radio-input input{
+    width: 20px;
+    background-color: #2E4C6D;
+    margin-right: 5px;
+}
+
+main .feature-hitung .form .radio-input label{
+    width: 350px;
+    max-width: 350px;
+    margin-top: 5px;
 }
 
 main .feature-hitung .btn-hitung-zakat {
@@ -72,22 +90,26 @@ main .feature-hitung .btn-hitung-zakat {
 }
 
 main .btn-hitung-zakat button{
-    background-color: #cf7611;
+    background-color: transparent;
     border: none;
-    color: white;
-    padding: 10px 20px;
+    color: #2E4C6D;
+    padding: 15px 70px;
     align-items: center;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 10px 3px;
+    margin: 20px 3px;
     cursor: pointer;
-    
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 2px solid #2E4C6D;
+    transition: 0.5s;
 }
 
-main .btn-kategori-zakat button:hover{
-    background-color: rgb(45, 25, 221);
+main .btn-hitung-zakat button:hover{
+    background-color: #2E4C6D;
+    color: white;
 }
 
 main .feature-hitung .form {
@@ -100,13 +122,24 @@ main .feature-hitung .form {
 
 main .feature-hitung .form .form-zakat{
     width: 50%;
-    
 }
 
 main .feature-hitung form input {
     width: 100%;
     height: 30px;
-    margin-top: 10px;
+    padding-top: 30px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #2E4C6D;
+    color: #396EB0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: large;
+    transition: 0.5s;
+}
+
+main .feature-hitung form input:hover {
+    font-size: medium;
 }
 
 /* ==========HASIL=================== */
@@ -116,16 +149,25 @@ main .feature-hasil  {
     flex-direction: column;
     align-items: center;
     height: 250px;
+    color: #396EB0;
+    font-size: small;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 main .feature-hasil .item-hasil  {
-    border-radius: 16px;
-    background: rgb(143, 141, 141);
-    width: 70%;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    border: 2px solid #2E4C6D;
+    width: 50%;
+    padding: 10px;
 }
 
-.item-hasil  h4  {
-    color: white;
+main .feature-hasil .item-hasil  h4, h2{
+    padding: 5px 0;
+}
+
+main .feature-hasil .item-hasil  h4{
+    text-align: right;
 }
 
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 const ZakatInvestasi = {
   async render() {
     return `
@@ -15,9 +16,17 @@ const ZakatInvestasi = {
       <div class="form">
         <form class="form-zakat">
         <input type="date" id="date" name="date" placeholder="1-Desember-2021">
-        <input type="number" id="idJumlahPenghasilan" name="idJumlahPenghasilan" placeholder="Jumlah Keuntungan Investasi / Bulan"><br>
-        <input type="radio" id="kotor" name="penghasilan" value="kotor"><label>Penghasilan Kotor</label>
-        <input type="radio" id="bersih" name="penghasilan" value="bersih"><label>Penghasilan Bersih</label>
+        <input type="number" id="idJumlahPenghasilan" name="idJumlahPenghasilan" placeholder="Jumlah Keuntungan Investasi / Bulan">
+        <div class="radio-input">
+          <div class="radio-input-first">
+            <label>Penghasilan Kotor</label>
+            <input type="radio" id="kotor" name="penghasilan" value="kotor">
+          </div>
+          <div class="radio-input-second">
+            <label>Penghasilan Bersih</label>
+            <input type="radio" id="bersih" name="penghasilan" value="bersih">
+          </div>
+        </div>
         </form>
       </div>
       <div class="btn-hitung-zakat">

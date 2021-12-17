@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 const ZakatProfesi = {
   async render() {
     return `

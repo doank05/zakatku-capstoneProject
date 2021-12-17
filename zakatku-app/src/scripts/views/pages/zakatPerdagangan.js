@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 const ZakatPerdagangan = {
   async render() {
     return `

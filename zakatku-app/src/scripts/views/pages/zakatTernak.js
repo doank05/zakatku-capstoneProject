@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 const ZakatTernak = {
   async render() {
     return `
@@ -19,12 +20,21 @@ const ZakatTernak = {
       <div class="form">
         <form class="form-zakat">
         <input type="date" id="date" name="date" placeholder="1-Desember-2021"><br>
-        <div id="hewans">
-          <input type="radio" id="sapi" name="hewan" value="sapi"><label for="sapi">Sapi/Kerbau</label><br>
-          <input type="radio" id="domba" name="hewan" value="domba"><label for="domba">Domba/Kambing</label><br>
-          <input type="radio" id="unta" name="hewan" value="unta"><label for="sapi">Unta</label><br>
+        <div class="radio-input">
+          <div class="radio-input-first">
+            <label for="sapi">Sapi/Kerbau</label>
+            <input type="radio" id="sapi" name="hewan" value="sapi">
+          </div>
+          <div class="radio-input-second">
+            <label for="domba">Domba/Kambing</label>
+            <input type="radio" id="domba" name="hewan" value="domba">
+            </div>
+          <div class="radio-input-third">
+            <label for="sapi">Unta</label>
+            <input type="radio" id="unta" name="hewan" value="unta">
+          </div>
         </div>
-        <input type="number" id="idJumlahHewan" name="idJumlahHewan" placeholder="Jumlah Hewan"><br>
+        <input type="number" id="idJumlahHewan" name="idJumlahHewan" placeholder="Jumlah Hewan">
         </form>
       </div>
       <div class="btn-hitung-zakat">
@@ -71,7 +81,7 @@ const ZakatTernak = {
         if (jumlahHewan >= syaratDomba) {
           zakat = 'unta';
         } else {
-          zakat = 'Belum mencukupi nisab unta';
+          zakat = 'Belum mencukupi nisab domba';
         }
       }
       document.getElementById('hasil').innerHTML = zakat;
