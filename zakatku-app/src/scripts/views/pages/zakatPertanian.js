@@ -36,8 +36,9 @@ const ZakatPertanian = {
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
+        <h3>Zakat Pertanian</h3>
         <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Total Tabungan : <span id="hasilTabungan"></span></h3>
+        <h2>Hasil Panen : <span id="hasilTabungan"></span></h3>
         <h2>Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
@@ -57,7 +58,7 @@ const ZakatPertanian = {
       if (cara === 'dialiriAlam') {
         if (jumlahPanen >= syaratPanen) {
           zakat = 0.1 * jumlahPanen;
-          document.getElementById('hasil').innerHTML = `${zakat}Kg`;
+          document.getElementById('hasil').innerHTML = `${zakat} Kg`;
         } else {
           zakat = 'Belum mencukupi nisab panen';
           document.getElementById('hasil').innerHTML = zakat;
@@ -65,14 +66,24 @@ const ZakatPertanian = {
       } else if (cara === 'dialiriAlat') {
         if (jumlahPanen >= syaratPanen) {
           zakat = 0.05 * jumlahPanen;
-          document.getElementById('hasil').innerHTML = `${zakat}Kg`;
+          document.getElementById('hasil').innerHTML = `${zakat} Kg`;
         } else {
           zakat = 'Belum mencukupi nisab panen';
           document.getElementById('hasil').innerHTML = zakat;
         }
       }
       document.getElementById('tanggal').innerHTML = date;
-      document.getElementById('hasilTabungan').innerHTML = jumlahPanen;
+      document.getElementById('hasilTabungan').innerHTML = `${jumlahPanen} Kg`;
+
+      const dataObject = {
+        jenisZakat: 'Zakat Pertanian',
+        tanggalZakat: date,
+        jumlahZakat: jumlahPanen,
+        totalZakat: zakat,
+      };
+      const changeToObject = JSON.stringify(dataObject);
+      console.log(changeToObject);
+      window.localStorage.setItem('data_hasil_zakatPertanian', changeToObject);
     }
   },
 };

@@ -31,9 +31,6 @@ const Zakat = {
         <div class="zakat-rikaz zakat">
           <a href="#/zakat-rikaz">ZAKAT RIKAZ</a>
         </div>
-        <div class="zakat-try zakat">
-          <a href="#/zakat-try">ZAKAT TRY</a>
-        </div>
       </div>
     `;
   },

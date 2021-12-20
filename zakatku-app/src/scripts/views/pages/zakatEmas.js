@@ -1,3 +1,6 @@
+/* eslint-disable no-restricted-globals */
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-use-before-define */
 const ZakatEmas = {
   async render() {
@@ -30,9 +33,10 @@ const ZakatEmas = {
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
-        <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Jumlah Emas : <span id="hasilTabungan"></span></h3>
-        <h2>Total Zakat : <span id="hasil"></span></h3>
+        <h3 class="jenis_zakat">Zakat Emas</h3>
+        <h4 class="tanggal_zakat">Tanggal     : <span id="tanggal" ></span></h4>
+        <h2 class="jumlah_zakat">Jumlah Emas : <span id="hasilTabungan"></span></h3>
+        <h2 class="total_zakat">Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
       `;
@@ -51,11 +55,21 @@ const ZakatEmas = {
       if (jumlahEmas >= syarat) {
         zakat = 0.025 * jumlahEmas;
       } else {
-        zakat = 'Tidak mencukupi syarat nisab 85 Gram';
+        zakat = 'Tidak mencukupi syarat nisab 85';
       }
-      document.getElementById('hasil').innerHTML = zakat;
+      document.getElementById('hasil').innerHTML = `${zakat} Gram`;
       document.getElementById('tanggal').innerHTML = date;
-      document.getElementById('hasilTabungan').innerHTML = jumlahEmas;
+      document.getElementById('hasilTabungan').innerHTML = `${jumlahEmas} Gram`;
+
+      const dataObject = {
+        jenisZakat: 'Zakat Emas',
+        tanggalZakat: date,
+        jumlahZakat: jumlahEmas,
+        totalZakat: zakat,
+      };
+      const changeToObject = JSON.stringify(dataObject);
+      console.log(changeToObject);
+      window.localStorage.setItem('data_hasil_zakatEmas', changeToObject);
     }
   },
 };

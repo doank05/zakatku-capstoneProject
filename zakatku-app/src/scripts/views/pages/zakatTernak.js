@@ -44,8 +44,9 @@ const ZakatTernak = {
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
+        <h3>Zakat Ternak</h3>
         <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Total Tabungan : <span id="hasilTabungan"></span></h3>
+        <h2>Jumlah Hewan : <span id="hasilTabungan"></span></h3>
         <h2>Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
@@ -79,14 +80,24 @@ const ZakatTernak = {
         }
       } else if (hewan === 'domba') {
         if (jumlahHewan >= syaratDomba) {
-          zakat = 'unta';
+          zakat = 'domba';
         } else {
           zakat = 'Belum mencukupi nisab domba';
         }
       }
       document.getElementById('hasil').innerHTML = zakat;
       document.getElementById('tanggal').innerHTML = date;
-      document.getElementById('hasilTabungan').innerHTML = jumlahHewan;
+      document.getElementById('hasilTabungan').innerHTML = `${jumlahHewan} ${zakat}`;
+
+      const dataObject = {
+        jenisZakat: 'Zakat Emas',
+        tanggalZakat: date,
+        jumlahZakat: jumlahHewan,
+        totalZakat: zakat,
+      };
+      const changeToObject = JSON.stringify(dataObject);
+      console.log(changeToObject);
+      window.localStorage.setItem('data_hasil_zakatTernak', changeToObject);
     }
   },
 };

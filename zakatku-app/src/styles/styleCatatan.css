@@ -1,5 +1,4 @@
 .head-page {
-    text-align: center;
     padding: 20px;
 }
 
@@ -15,4 +14,74 @@
     font-size: 18px;
     font-family: 'PT Sans Narrow', sans-serif;
     color: #396EB0;
+}
+
+.head-page .btn-riwayat-zakat {
+    display: flex;
+    justify-content: center;
+}
+
+.head-page .btn-riwayat-zakat button {
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    color: #2E4C6D;
+    padding: 15px 70px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 2px solid #2E4C6D;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.head-page .btn-riwayat-zakat button:hover {
+    background-color: #2E4C6D;
+    color: white;
+}
+
+.riwayat-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.riwayat-data .item-hasil {
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    border: 2px solid #2E4C6D;
+    width: 92%;
+    padding: 10px;
+    margin: 5px 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.riwayat-data .item-hasil:hover {
+    background-color: #EAEAEA;
+}
+
+.riwayat-data .item-hasil  h4, h2{
+    padding: 5px 0;
+    color: #396EB0;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.riwayat-data .item-hasil  h4{
+    font-size: 15px;
+    text-align: right;
+}
+
+.riwayat-data .item-hasil  h3{
+    text-align: center;
+    font-size: 22px;
+    color: #2E4C6D;
+    text-transform: uppercase;
+}
+
+.riwayat-data .item-hasil h2 {
+    font-size: 18px;
 }

@@ -1,0 +1,87 @@
+@media screen and (max-width: 1110px) {
+    .riwayat-data {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .riwayat-data .item-hasil {
+        width: 90%;
+    }
+    
+    .riwayat-data .item-hasil  h4{
+        font-size: 12px;
+    }
+    
+    .riwayat-data .item-hasil  h3{
+        font-size: 20px;
+    }
+    
+    .riwayat-data .item-hasil h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .riwayat-data {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .riwayat-data .item-hasil {
+        width: 93%;
+    }
+
+    .riwayat-data .item-hasil  h4{
+        font-size: 15px;
+    }
+    
+    .riwayat-data .item-hasil  h3{
+        font-size: 25px;
+    }
+    
+    .riwayat-data .item-hasil h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .head-page h1 {
+        font-size: 30px;
+    }
+    
+    .head-page p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .head-page .btn-riwayat-zakat button {
+        padding: 15px 20px;
+        font-size: 12px;
+    }
+
+    .riwayat-data .item-hasil  h4{
+        font-size: 13px;
+    }
+    
+    .riwayat-data .item-hasil  h3{
+        font-size: 22px;
+    }
+    
+    .riwayat-data .item-hasil h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .riwayat-data .item-hasil {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .riwayat-data .item-hasil {
+        width: 88%;
+    }
+}

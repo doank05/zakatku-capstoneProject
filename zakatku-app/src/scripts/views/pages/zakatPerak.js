@@ -30,8 +30,9 @@ const ZakatPerak = {
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
+        <h3>Zakat Perak</h3>
         <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Total Tabungan : <span id="hasilTabungan"></span></h3>
+        <h2>Jumlah Perak : <span id="hasilTabungan"></span></h3>
         <h2>Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
@@ -51,11 +52,22 @@ const ZakatPerak = {
       if (jumlahPerak >= syarat) {
         zakat = 0.025 * (jumlahPerak * 10248);
       } else {
-        zakat = 'Tidak mencukupi syarat nisab 595 Gram Perak';
+        zakat = 'Tidak mencukupi syarat nisab 595';
       }
-      document.getElementById('hasil').innerHTML = zakat;
+      document.getElementById('hasil').innerHTML = `${zakat} Gram`;
       document.getElementById('tanggal').innerHTML = date;
-      document.getElementById('hasilTabungan').innerHTML = jumlahPerak;
+      document.getElementById('hasilTabungan').innerHTML = `${jumlahPerak} Gram`;
+
+      const dataObject = {
+        jenisZakat: 'Zakat Perak',
+        tanggalZakat: date,
+        jumlahZakat: jumlahPerak,
+        totalZakat: zakat,
+      };
+
+      const changeToObject = JSON.stringify(dataObject);
+      console.log(changeToObject);
+      window.localStorage.setItem('data_hasil_zakatPerak', changeToObject);
     }
   },
 };

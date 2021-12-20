@@ -27,8 +27,9 @@ const ZakatPerdagangan = {
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
+        <h3>Zakat Perdagangan</h3>
         <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Total Tabungan : <span id="hasilTabungan"></span></h3>
+        <h2>Jumlah Keuntungan : <span id="hasilTabungan"></span></h3>
         <h2>Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
@@ -45,7 +46,7 @@ const ZakatPerdagangan = {
       const jumlahKeuntungan = document.getElementById('idJumlahKeuntungan').value;
       const date = document.getElementById('date').value;
       let zakat;
-      const formatter = new Intl.NumberFormat('en-US', {
+      const formatter = new Intl.NumberFormat('id-ID', {
         style: 'currency',
         currency: 'IDR',
       });
@@ -57,7 +58,17 @@ const ZakatPerdagangan = {
         document.getElementById('hasil').innerHTML = zakat;
       }
       document.getElementById('tanggal').innerHTML = date;
-      document.getElementById('hasilTabungan').innerHTML = jumlahKeuntungan;
+      document.getElementById('hasilTabungan').innerHTML = formatter.format(jumlahKeuntungan);
+
+      const dataObject = {
+        jenisZakat: 'Zakat Perdagangan',
+        tanggalZakat: date,
+        jumlahZakat: jumlahKeuntungan,
+        totalZakat: zakat,
+      };
+      const changeToObject = JSON.stringify(dataObject);
+      console.log(changeToObject);
+      window.localStorage.setItem('data_hasil_zakatPerdagangan', changeToObject);
     }
   },
 };

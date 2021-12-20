@@ -1,6 +1,6 @@
 import Beranda from '../views/pages/beranda';
 import Zakat from '../views/pages/zakat';
-import Catatan from '../views/pages/catatan';
+import Riwayat from '../views/pages/riwayat';
 import ZakatTabungan from '../views/pages/zakatTabungan';
 import ZakatEmas from '../views/pages/zakatEmas';
 import ZakatPerak from '../views/pages/zakatPerak';
@@ -10,13 +10,12 @@ import ZakatPertanian from '../views/pages/zakatPertanian';
 import ZakatProfesi from '../views/pages/zakatProfesi';
 import ZakatInvestasi from '../views/pages/zakatInvestasi';
 import ZakatRikaz from '../views/pages/zakatRikaz';
-import ZakatTry from '../views/pages/zakatTry';
 
 const routes = {
   '/': Beranda, // default page
   '/beranda': Beranda,
   '/zakat': Zakat,
-  '/catatan': Catatan,
+  '/riwayat': Riwayat,
   '/zakat-tabungan': ZakatTabungan,
   '/zakat-emas': ZakatEmas,
   '/zakat-perak': ZakatPerak,
@@ -26,7 +25,6 @@ const routes = {
   '/zakat-profesi': ZakatProfesi,
   '/zakat-investasi': ZakatInvestasi,
   '/zakat-rikaz': ZakatRikaz,
-  '/zakat-try': ZakatTry,
 };
 
 export default routes;

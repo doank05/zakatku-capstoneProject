@@ -28,8 +28,9 @@ const ZakatRikaz = {
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
+        <h3>Zakat Rikaz</h3>
         <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Total Tabungan : <span id="hasilTabungan"></span></h3>
+        <h2>Nilai Harta : <span id="hasilTabungan"></span></h3>
         <h2>Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
@@ -44,14 +45,24 @@ const ZakatRikaz = {
       const rikaz = document.getElementById('idRikaz').value;
       const date = document.getElementById('date').value;
 
-      const formatter = new Intl.NumberFormat('en-US', {
+      const formatter = new Intl.NumberFormat('id-ID', {
         style: 'currency',
         currency: 'IDR',
       });
       const zakat = 0.2 * rikaz;
-      document.getElementById('hasil').innerHTML = `${formatter.format(zakat)} /Bulan`;
+      document.getElementById('hasil').innerHTML = formatter.format(zakat);
       document.getElementById('tanggal').innerHTML = date;
-      document.getElementById('hasilTabungan').innerHTML = rikaz;
+      document.getElementById('hasilTabungan').innerHTML = formatter.format(rikaz);
+
+      const dataObject = {
+        jenisZakat: 'Zakat Pertanian',
+        tanggalZakat: date,
+        jumlahZakat: rikaz,
+        totalZakat: zakat,
+      };
+      const changeToObject = JSON.stringify(dataObject);
+      console.log(changeToObject);
+      window.localStorage.setItem('data_hasil_zakatRikaz', changeToObject);
     }
   },
 };

@@ -36,8 +36,9 @@ const ZakatInvestasi = {
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
+        <h3>Zakat Investasi</h3>
         <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Total Tabungan : <span id="hasilTabungan"></span></h3>
+        <h2>Jumlah Keuntungan : <span id="hasilTabungan"></span></h3>
         <h2>Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
@@ -54,7 +55,7 @@ const ZakatInvestasi = {
       const penghasilan = document.querySelector('input[name="penghasilan"]:checked').value;
       const date = document.getElementById('date').value;
       let zakat;
-      const formatter = new Intl.NumberFormat('en-US', {
+      const formatter = new Intl.NumberFormat('id-ID', {
         style: 'currency',
         currency: 'IDR',
       });
@@ -76,7 +77,17 @@ const ZakatInvestasi = {
         }
       }
       document.getElementById('tanggal').innerHTML = date;
-      document.getElementById('hasilTabungan').innerHTML = jumlahPenghasilan;
+      document.getElementById('hasilTabungan').innerHTML = `${formatter.format(jumlahPenghasilan)} /Bulan`;
+
+      const dataObject = {
+        jenisZakat: 'Zakat Investasi',
+        tanggalZakat: date,
+        jumlahZakat: jumlahPenghasilan,
+        totalZakat: zakat,
+      };
+      const changeToObject = JSON.stringify(dataObject);
+      console.log(changeToObject);
+      window.localStorage.setItem('data_hasil_zakatInvestasi', changeToObject);
     }
   },
 };
