@@ -12,17 +12,17 @@ const ZakatPertanian = {
     </section>
   
     <section id="feature-hitung" class="feature-hitung">
-      <h1 class="header-hitung-zakat">HITUNG ZAKAT</h1>
+      <h1 class="header-hitung-zakat" tabindex="0">HITUNG ZAKAT</h1>
       <div class="form">
         <form class="form-zakat">
         <input type="date" id="date" name="date" placeholder="1-Desember-2021">
         <div class="radio-input">
           <div class="radio-input-first">
-          <label>Dialiri dengan air hujan, sungai atau mata air</label>
+          <label tabindex="0">Dialiri dengan air hujan, sungai atau mata air</label>
           <input type="radio" id="dialiriAlam" name="cara" value="dialiriAlam">
           </div>
           <div class="radio-input-second">
-          <label>Dialiri dengan cara disiram (menggunakan alat)</label>
+          <label tabindex="0">Dialiri dengan cara disiram (menggunakan alat)</label>
           <input type="radio" id="dialiriAlat" name="cara" value="dialiriAlat">
           </div>
           </div>
@@ -30,16 +30,16 @@ const ZakatPertanian = {
         </form>
       </div>
       <div class="btn-hitung-zakat">
-        <button class="btn-hitung-zakat" id="btn-hitung-zakat" >Hitung</button>
+        <button class="btn-hitung-zakat" id="btn-hitung-zakat" tabindex="0">Hitung</button>
       </div>
     </section>
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
-        <h3>Zakat Pertanian</h3>
-        <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Hasil Panen : <span id="hasilTabungan"></span></h3>
-        <h2>Total Zakat : <span id="hasil"></span></h3>
+        <h3 tabindex="0">Zakat Pertanian</h3>
+        <h4 tabindex="0">Tanggal     : <span id="tanggal" ></span></h4>
+        <h2 tabindex="0">Hasil Panen : <span id="hasilTabungan"></span></h3>
+        <h2 tabindex="0">Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
       `;

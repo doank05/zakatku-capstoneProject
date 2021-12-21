@@ -3,16 +3,16 @@ const ZakatInvestasi = {
   async render() {
     return `
     <section id="kategori-zakat" class="kategori-zakat">
-    <h1 class="header-kategori-zakat">ZAKAT INVESTASI</h1>
+    <h1 class="header-kategori-zakat" tabindex="0">ZAKAT INVESTASI</h1>
     <div class="description-zakat" id="description-zakat">
-      <p>Zakat Investasi dalam istilah fiqih biasa disebut zakat “Almustaghillat”. Zakat tersebut dikenakan terhadap harta yang diperoleh dari hasil investasi. Diantara bentuk usaha yang termasuk investasi seperti bangunan atau kantor yang disewakan, saham, rental mobil, rumah kontrakan, dll.
-      <br>Para ulama kontemporer, seperti Abu Zahrah, Abdul Wahab Kholaf dan Yusuf Qordhowi, menganalogikannya ke dalam zakat pertanian yaitu dikeluarkan saat menghasilkan dari hasilnya tanpa memasukkan unsur modal, dengan tarif 5% untuk penghasilan kotor dan 10% untuk penghasilan bersih.
+      <p tabindex="0">Zakat Investasi dalam istilah fiqih biasa disebut zakat “Almustaghillat”. Zakat tersebut dikenakan terhadap harta yang diperoleh dari hasil investasi. Diantara bentuk usaha yang termasuk investasi seperti bangunan atau kantor yang disewakan, saham, rental mobil, rumah kontrakan, dll.
+      <br tabindex="0">Para ulama kontemporer, seperti Abu Zahrah, Abdul Wahab Kholaf dan Yusuf Qordhowi, menganalogikannya ke dalam zakat pertanian yaitu dikeluarkan saat menghasilkan dari hasilnya tanpa memasukkan unsur modal, dengan tarif 5% untuk penghasilan kotor dan 10% untuk penghasilan bersih.
       </p>
     </div> 
     </section>
   
     <section id="feature-hitung" class="feature-hitung">
-      <h1 class="header-hitung-zakat">HITUNG ZAKAT</h1>
+      <h1 class="header-hitung-zakat" tabindex="0">HITUNG ZAKAT</h1>
       <div class="form">
         <form class="form-zakat">
         <input type="date" id="date" name="date" placeholder="1-Desember-2021">
@@ -23,23 +23,23 @@ const ZakatInvestasi = {
             <input type="radio" id="kotor" name="penghasilan" value="kotor">
           </div>
           <div class="radio-input-second">
-            <label>Penghasilan Bersih</label>
+            <label tabindex="0">Penghasilan Bersih</label>
             <input type="radio" id="bersih" name="penghasilan" value="bersih">
           </div>
         </div>
         </form>
       </div>
       <div class="btn-hitung-zakat">
-        <button class="btn-hitung-zakat" id="btn-hitung-zakat" >Hitung</button>
+        <button class="btn-hitung-zakat" id="btn-hitung-zakat" tabindex="0">Hitung</button>
       </div>
     </section>
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
-        <h3>Zakat Investasi</h3>
-        <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Jumlah Keuntungan : <span id="hasilTabungan"></span></h3>
-        <h2>Total Zakat : <span id="hasil"></span></h3>
+        <h3 tabindex="0">Zakat Investasi</h3>
+        <h4 tabindex="0">Tanggal     : <span id="tanggal" ></span></h4>
+        <h2 tabindex="0">Jumlah Keuntungan : <span id="hasilTabungan"></span></h3>
+        <h2 tabindex="0">Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
       `;

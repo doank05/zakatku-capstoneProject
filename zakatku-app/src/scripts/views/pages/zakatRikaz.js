@@ -3,9 +3,9 @@ const ZakatRikaz = {
   async render() {
     return `
     <section id="kategori-zakat" class="kategori-zakat">
-    <h1 class="header-kategori-zakat">ZAKAT RIKAZ</h1>
+    <h1 class="header-kategori-zakat" tabindex="0">ZAKAT RIKAZ</h1>
     <div class="description-zakat" id="description-zakat">
-      <p>Zakat barang temuan (rikaz) adalah zakat yang wajib dikeluarkan untuk barang yang ditemukan
+      <p tabindex="0">Zakat barang temuan (rikaz) adalah zakat yang wajib dikeluarkan untuk barang yang ditemukan
        terpendam di dalam tanah, atau yang biasa disebut dengan harta karun. Zakat barang temuan tidak 
        mensyaratkan baik haul (lama penyimpanan). Barang temuan yang wajib dizakati hanya yang berupa emas 
        atau perak. Adapun nisabnya (jumlah minimal untuk terkena kewajiban zakat) sesuai nisab emas jika yang ditemukan emas, dan nisab perak jika yang ditemukan perak, 
@@ -14,7 +14,7 @@ const ZakatRikaz = {
     </section>
   
     <section id="feature-hitung" class="feature-hitung">
-      <h1 class="header-hitung-zakat">HITUNG ZAKAT</h1>
+      <h1 class="header-hitung-zakat" tabindex="0">HITUNG ZAKAT</h1>
       <div class="form">
         <form class="form-zakat">
         <input type="date" id="date" name="date" placeholder="1-Desember-2021">
@@ -28,10 +28,10 @@ const ZakatRikaz = {
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
-        <h3>Zakat Rikaz</h3>
-        <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Nilai Harta : <span id="hasilTabungan"></span></h3>
-        <h2>Total Zakat : <span id="hasil"></span></h3>
+        <h3 tabindex="0">Zakat Rikaz</h3>
+        <h4 tabindex="0">Tanggal     : <span id="tanggal" ></span></h4>
+        <h2 tabindex="0">Nilai Harta : <span id="hasilTabungan"></span></h3>
+        <h2 tabindex="0">Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
       `;

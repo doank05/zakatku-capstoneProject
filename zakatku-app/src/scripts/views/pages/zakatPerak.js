@@ -3,20 +3,20 @@ const ZakatPerak = {
   async render() {
     return `
     <section id="kategori-zakat" class="kategori-zakat">
-    <h1 class="header-kategori-zakat">ZAKAT PERAK</h1>
+    <h1 class="header-kategori-zakat" tabindex="0">ZAKAT PERAK</h1>
     <div class="description-zakat" id="description-zakat">
-      <p>Zakat emas, perak, atau logam mulia adalah zakat yang ditunaikan atas emas, perak dan logam mulia lainnya yang telah mencapai nisab. Sudah seharusnya ditunaikan zakatnya. Tentunya dengan dasar syariat yang benar 
+      <p tabindex="0">Zakat emas, perak, atau logam mulia adalah zakat yang ditunaikan atas emas, perak dan logam mulia lainnya yang telah mencapai nisab. Sudah seharusnya ditunaikan zakatnya. Tentunya dengan dasar syariat yang benar 
       agar jangan sampai mengambil yang bukan haknya atau menahan yang sudah menjadi hak Allah SWT. Syarat Emas :</p>
       <ul class="list-syarat-emas">
-      <li>Mencapai haul satu tahun</li>
-      <li>Mencapai nisab zakat perak 595 gr perak</li>
-      <li>Bebas dari hutang yang menyebabkan kurang dari nisab</li>
+      <li tabindex="0">Mencapai haul satu tahun</li>
+      <li tabindex="0">Mencapai nisab zakat perak 595 gr perak</li>
+      <li tabindex="0">Bebas dari hutang yang menyebabkan kurang dari nisab</li>
       </ul>
     </div> 
     </section>
   
     <section id="feature-hitung" class="feature-hitung">
-      <h1 class="header-hitung-zakat">HITUNG ZAKAT</h1>
+      <h1 class="header-hitung-zakat" tabindex="0">HITUNG ZAKAT</h1>
       <div class="form">
         <form class="form-zakat">
         <input type="date" id="date" name="date" placeholder="1-Desember-2021"><br>
@@ -24,16 +24,16 @@ const ZakatPerak = {
         </form>
       </div>
       <div class="btn-hitung-zakat">
-        <button class="btn-hitung-zakat" id="btn-hitung-zakat" >Hitung</button>
+        <button class="btn-hitung-zakat" id="btn-hitung-zakat"  tabindex="0">Hitung</button>
       </div>
     </section>
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
-        <h3>Zakat Perak</h3>
-        <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Jumlah Perak : <span id="hasilTabungan"></span></h3>
-        <h2>Total Zakat : <span id="hasil"></span></h3>
+        <h3 tabindex="0">Zakat Perak</h3>
+        <h4 tabindex="0">Tanggal     : <span id="tanggal" ></span></h4>
+        <h2 tabindex="0">Jumlah Perak : <span id="hasilTabungan"></span></h3>
+        <h2 tabindex="0">Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
       `;

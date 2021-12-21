@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable consistent-return */
 /* eslint-disable eqeqeq */
 /* eslint-disable no-unused-vars */
@@ -5,10 +6,10 @@ const Riwayat = {
   async render() {
     return `
     <div class="head-page">
-      <h1>RIWAYAT</h1>
-      <p>Penyimpanan Riwayat Terakhir Perhitungan Zakat</p>
+      <h1 tabindex="0">RIWAYAT</h1>
+      <p tabindex="0">Penyimpanan Riwayat Terakhir Perhitungan Zakat</p>
       <div class="btn-riwayat-zakat">
-        <button class="btn-riwayat-zakat" id="btn-riwayat"> TEKAN UNTUK MELIHAT RIWAYAT</button>
+        <button class="btn-riwayat-zakat" id="btn-riwayat" tabindex="0"> TEKAN UNTUK MELIHAT RIWAYAT</button>
       </div>
       <div class="riwayat-data">
       </div>

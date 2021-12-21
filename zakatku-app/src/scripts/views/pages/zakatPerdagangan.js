@@ -3,17 +3,16 @@ const ZakatPerdagangan = {
   async render() {
     return `
     <section id="kategori-zakat" class="kategori-zakat">
-    <h1 class="header-kategori-zakat">ZAKAT PERDAGANGAN</h1>
+    <h1 class="header-kategori-zakat" tabindex="0">ZAKAT PERDAGANGAN</h1>
     <div class="description-zakat" id="description-zakat">
-      <p>Zakat perdagangan adalah zakat yang dikeluarkan dari harta niaga, sedangkan harta niaga adalah harta atau aset yang diperjualbelikan dengan maksud untuk mendapatkan keuntungan. Dengan demikian maka dalam harta niaga harus ada 2 motivasi: Motivasi untuk berbisnis (diperjualbelikan) dan motivasi mendapatkan keuntungan.
-      <br>Harta perdagangan yang dikenakan zakat dihitung dari asset lancar usaha dikurangi hutang yang berjangka pendek (hutang yang jatuh tempo hanya satu tahun). Jika selisih dari asset lancar dan hutang tersebut sudah mencapai nisab, maka wajib dibayarkan zakatnya.
-
+      <p tabindex="0">Zakat perdagangan adalah zakat yang dikeluarkan dari harta niaga, sedangkan harta niaga adalah harta atau aset yang diperjualbelikan dengan maksud untuk mendapatkan keuntungan. Dengan demikian maka dalam harta niaga harus ada 2 motivasi: Motivasi untuk berbisnis (diperjualbelikan) dan motivasi mendapatkan keuntungan.
+      <br tabindex="0">Harta perdagangan yang dikenakan zakat dihitung dari asset lancar usaha dikurangi hutang yang berjangka pendek (hutang yang jatuh tempo hanya satu tahun). Jika selisih dari asset lancar dan hutang tersebut sudah mencapai nisab, maka wajib dibayarkan zakatnya.
       Nisab zakat perdagangan senilai 85 gram emas dengan tarif zakat sebesar 2,5% dan sudah mencapai satu tahun (haul). Berikut cara menghitung zakat perdagangan:</p>
     </div> 
     </section>
   
     <section id="feature-hitung" class="feature-hitung">
-      <h1 class="header-hitung-zakat">HITUNG ZAKAT</h1>
+      <h1 class="header-hitung-zakat" tabindex="0">HITUNG ZAKAT</h1>
       <div class="form">
         <form class="form-zakat">
         <input type="date" id="date" name="date" placeholder="1-Desember-2021"><br>
@@ -21,16 +20,16 @@ const ZakatPerdagangan = {
         </form>
       </div>
       <div class="btn-hitung-zakat">
-        <button class="btn-hitung-zakat" id="btn-hitung-zakat" >Hitung</button>
+        <button class="btn-hitung-zakat" id="btn-hitung-zakat" tabindex="0">Hitung</button>
       </div>
     </section>
 
     <section id="feature-hasil" class="feature-hasil">
       <div class="item-hasil">
-        <h3>Zakat Perdagangan</h3>
-        <h4>Tanggal     : <span id="tanggal" ></span></h4>
-        <h2>Jumlah Keuntungan : <span id="hasilTabungan"></span></h3>
-        <h2>Total Zakat : <span id="hasil"></span></h3>
+        <h3 tabindex="0">Zakat Perdagangan</h3>
+        <h4 tabindex="0">Tanggal     : <span id="tanggal" ></span></h4>
+        <h2 tabindex="0">Jumlah Keuntungan : <span id="hasilTabungan"></span></h3>
+        <h2 tabindex="0">Total Zakat : <span id="hasil"></span></h3>
       </div>
     </section>
       `;
