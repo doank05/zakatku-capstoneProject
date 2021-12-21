@@ -50,6 +50,23 @@
     main .content .third-content .head-text h2{
         font-size: 30px;
     }
+
+    main .content .fourth-content img {
+        width: 200px;
+        padding: 0 80px;
+    }
+    
+    main .content .fourth-content h2 {
+        font-size: 22px;
+    }
+    
+    main .content .fourth-content p {
+        font-size: 17px;
+    }
+
+    main .content .fourth-content .list-penerima-zakat {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 920px) {
@@ -83,6 +100,19 @@
     main .content .third-content .artikel-container {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
+    }
+
+    main .content .fourth-content img {
+        width: 180px;
+        padding: 0 80px;
+    }
+    
+    main .content .fourth-content p {
+        font-size: 16px;
+    }
+
+    main .content .fourth-content .list-penerima-zakat {
+        font-size: 14px;
     }
 }
 
@@ -119,6 +149,24 @@
     main .content .third-content .artikel-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    main .content .fourth-content .description-firts-content{
+        padding-right: 10px !important;
+    }
+
+    main .content .fourth-content img {
+        width: 150px;
+        padding: 0 50px;
+    }
+    
+    main .content .fourth-content p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    main .content .fourth-content .list-penerima-zakat {
+        font-size: 14px;
     }
 }
 
@@ -161,6 +209,10 @@
     
     main .fitur-description .feature p{
         font-size: 12px;
+    }
+
+    main .content .fourth-content .list-penerima-zakat {
+        font-size: 14px;
     }
 }
 
@@ -209,6 +261,11 @@
         padding: 0px;
     }
 
+    main .content .fourth-content {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+
     main .content .first-content .description-firts-content{
         padding: 15px;
     }
@@ -230,6 +287,22 @@
     }
     
     main .content .second-content p {
+        font-size: 14px;
+    }
+
+    main .content .fourth-content .description-firts-content{
+        padding: 15px;
+    }
+
+    main .content .fourth-content img {
+        width: 100px;
+    }
+    
+    main .content .fourth-content p {
+        font-size: 14px;
+    }
+
+    main .content .fourth-content .list-penerima-zakat {
         font-size: 14px;
     }
 }

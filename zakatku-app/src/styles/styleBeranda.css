@@ -118,7 +118,7 @@ main .content .second-content .description-second-content {
 }
 
 main .content .third-content {
-    background-color: #EAEAEA;
+    background-color: #ffffff;
     padding-bottom: 50px;
 }
 
@@ -167,4 +167,50 @@ main .content .third-content .artikel-container .artikel-content p{
     font-size: 15px;
     font-family: 'PT Sans Narrow', sans-serif;
     color: #396EB0;
+}
+
+main .content .fourth-content .description-firts-content{
+    padding-right: 20px !important;
+}
+
+main .content .fourth-content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 50px 0;
+    text-align: center;
+    background-color: #EAEAEA;
+    height: fit-content;
+}
+
+main .content .fourth-content img {
+    width: 250px;
+    padding: 0 100px;
+}
+
+main .content .fourth-content h2 {
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E4C6D;
+    padding-bottom: 10px;
+}
+
+main .content .fourth-content p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #396EB0;
+}
+
+main .content .fourth-content .list-penerima-zakat {
+    text-align: left;
+    font-size: 18px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #396EB0;
+}
+
+main .content .fourth-content .description-firts-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 100px;
 }
