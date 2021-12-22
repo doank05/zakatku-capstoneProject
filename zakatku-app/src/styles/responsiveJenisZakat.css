@@ -1,0 +1,160 @@
+@media screen and (max-width: 850px) { 
+    main .kategori-zakat h1 {
+        font-size: 30px;
+    }
+
+    main .description-zakat p{
+        font-size: 15px;
+    }
+
+    main .description-zakat ul{
+        font-size: 15px;
+    }
+
+    /* =========> Hitung Zakat */
+    main .feature-hitung h1 {
+        font-size: 28px;
+    }
+    
+    main .feature-hitung .form .radio-input{
+        margin-top: 25px;
+        margin-bottom: -20px;
+        font-size: small;
+    }
+    
+    main .feature-hitung .form .radio-input input{
+        width: 20px;
+    }
+    
+    main .btn-hitung-zakat button{
+        padding: 13px 60px;
+        font-size: 13px;
+    }
+    
+    main .feature-hitung form input {
+        font-size: medium;
+    }
+    
+    main .feature-hitung form input:hover {
+        font-size: small;
+    }
+
+    /* ============> Hasil */ 
+    main .feature-hasil .item-hasil  h4{
+        text-align: right;
+    }
+
+    main .feature-hasil .item-hasil  h2{
+        font-size: 18px;
+    }
+
+    main .feature-hasil .item-hasil {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width: 620px) { 
+    main .kategori-zakat h1 {
+        font-size: 28px;
+    }
+
+    main .description-zakat p{
+        font-size: 14px;
+    }
+
+    main .description-zakat ul{
+        font-size: 14px;
+    }
+
+    /* =========> Hitung Zakat */
+    main .feature-hitung h1 {
+        font-size: 25px;
+    }
+
+    main .feature-hitung .form .radio-input label{
+        width: 200px;
+        font-size: 13px;
+    }
+    
+    main .feature-hitung form input {
+        font-size: small;
+    }
+    
+    main .feature-hitung form input:hover {
+        font-size: x-small;
+    }
+
+    /* ============> Hasil */ 
+    main .feature-hasil .item-hasil  h4{
+        text-align: right;
+        font-size: 12px;
+    }
+
+    main .feature-hasil .item-hasil  h2{
+        font-size: 15px;
+    }
+
+    main .btn-hitung-zakat button{
+        padding: 12px 50px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) { 
+    main .kategori-zakat h1 {
+        font-size: 26px;
+    }
+
+    main .description-zakat p{
+        font-size: 13px;
+    }
+
+    main .description-zakat ul{
+        font-size: 13px;
+    }
+
+    /* =========> Hitung Zakat */
+    main .feature-hitung h1 {
+        font-size: 25px;
+    }
+    
+    
+    main .feature-hitung .form .radio-input{
+        margin-top: 25px;
+        margin-bottom: -20px;
+    }
+
+
+    main .feature-hitung .form .radio-input label{
+        width: 200px;
+        font-size: 11px;
+    }
+    
+    main .feature-hitung .form .radio-input input{
+        width: 20px;
+    }
+    
+    main .btn-hitung-zakat button{
+        padding: 13px 60px;
+        font-size: 13px;
+    }
+
+    main .feature-hasil .item-hasil  h4{
+        text-align: right;
+        font-size: 12px;
+    }
+
+    main .feature-hasil .item-hasil  h2{
+        font-size: 12px;
+    }
+
+    main .feature-hasil .item-hasil  h2{
+        font-size: 13px;
+    }
+
+    main .btn-hitung-zakat button{
+        padding: 12px 50px;
+        font-size: 12px;
+    }
+}
