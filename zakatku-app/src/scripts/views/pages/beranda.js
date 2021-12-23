@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+import TheNews from '../../data/theNews';
+import createNewsItemTemplate from '../templates/template-news';
+
 const Beranda = {
   async render() {
     return `
@@ -70,30 +74,21 @@ const Beranda = {
           <div class="head-text">
             <h2 tabindex="0">ARTIKEL</h2>
           </div>
-          <div class="artikel-container">
-            <div class="artikel-content">
-                <img src="jumbotron1.jpg" alt="content-image">
-                <h3 tabindex="0">Judul Artikel</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ea corrupti aperiam delectus, sint quam, exercitationem cumque inventore voluptatem ullam, hic repudiandae eligendi reprehenderit error mollitia obcaecati aut nulla dignissimos?</p>
-            </div>
-            <div class="artikel-content">
-                <img src="jumbotron1.jpg" alt="content-image">
-                <h3 tabindex="0">Judul Artikel</h3>
-                <p tabindex="0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ea corrupti aperiam delectus, sint quam, exercitationem cumque inventore voluptatem ullam, hic repudiandae eligendi reprehenderit error mollitia obcaecati aut nulla dignissimos?</p>
-            </div>
-            <div class="artikel-content">
-                <img src="jumbotron1.jpg" alt="content-image">
-                <h3 tabindex="0">Judul Artikel</h3>
-                <p tabindex="0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ea corrupti aperiam delectus, sint quam, exercitationem cumque inventore voluptatem ullam, hic repudiandae eligendi reprehenderit error mollitia obcaecati aut nulla dignissimos?</p>
-            </div>
-          </div>
+            <div id="artikel" class="artikel"></div>
         </div>
+          
       </section>
       `;
   },
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    const artikel = await TheNews.headlineNews();
+    console.log(artikel);
+    const artikelContainer = document.querySelector('#artikel');
+    artikel.forEach((articles) => {
+      artikelContainer.innerHTML += createNewsItemTemplate(articles);
+    });
   },
 };
 

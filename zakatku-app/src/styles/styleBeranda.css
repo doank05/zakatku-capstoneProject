@@ -132,26 +132,26 @@ main .content .third-content .head-text h2{
 }
 
 
-main .content .third-content .artikel-container {
+main .content .third-content .artikel {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 50px;
 }
 
-main .content .third-content .artikel-container .artikel-content{
+main .content .third-content .artikel .artikel-item{
     margin: 10px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 10px;
     background-color: white;
 }
 
-main .content .third-content .artikel-container .artikel-content img{
+main .content .third-content .artikel .artikel-item img{
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-main .content .third-content .artikel-container .artikel-content h3{
+main .content .third-content .artikel .artikel-item h3{
     padding: 5px;
     text-align: center;
     font-size: 35px;
@@ -161,10 +161,16 @@ main .content .third-content .artikel-container .artikel-content h3{
     text-transform: uppercase;
 }
 
-main .content .third-content .artikel-container .artikel-content p{
+main .content .third-content .artikel .artikel-item span{
+    text-align: justify;
+    font-size: 18px;
+    font-family: Arial;
+    color: #000000;
+}
+main .content .third-content .artikel .artikel-item p{
     padding: 0 20px 50px 20px;
     text-align: justify;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'PT Sans Narrow', sans-serif;
     color: #396EB0;
 }
