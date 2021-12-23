@@ -97,7 +97,7 @@
         font-size: 16px;
     }
 
-    main .content .third-content .artikel-container {
+    main .content .third-content .artikel {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
     }
@@ -146,7 +146,7 @@
         text-align: justify;
     }
 
-    main .content .third-content .artikel-container {
+    main .content .third-content .artikel {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
