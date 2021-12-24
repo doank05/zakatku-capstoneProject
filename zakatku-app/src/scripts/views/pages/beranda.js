@@ -7,21 +7,21 @@ const Beranda = {
     return `
       <section id="fitur-description" class="fitur-description">
         <div class="jumbotron">
-          <img src="jumbotron1-crop.jpg" alt="image-jumbotron">
+          <img class="lazyload" src="jumbotron1-crop.jpg" alt="image-jumbotron">
         </div>
         <div class="feature">
           <div class="feature-type">
-            <img src="edukasi-icon.png" alt="icon-edukasi">
+            <img class="lazyload" src="edukasi-icon.png" alt="icon-edukasi">
             <h2 tabindex="0">EDUKASI</h2>
             <p tabindex="0">Pelajari berbagai macam jenis zakat dan aturan zakat sesuai dengan aturan.</p>
           </div>
           <div class="feature-type">
-            <img src="kalkulator-icon.png" alt="icon-kalkulator">
+            <img class="lazyload" src="kalkulator-icon.png" alt="icon-kalkulator">
             <h2 tabindex="0">PERHITUNGAN</h2>
             <p tabindex="0">Hitung zakat yang harus dikeluarkan dengan fitur dari wesite ini.</p>
           </div>
           <div class="feature-type">
-            <img src="catatan-icon.png" alt="icon-catatan">
+            <img class="lazyload" src="catatan-icon.png" alt="icon-catatan">
             <h2 tabindex="0">CATATAN</h2>
             <p tabindex="0">Simpan riwayat perhitungan zakatmu agar dapat dikelola dengan baik.</p>
           </div>
@@ -33,10 +33,10 @@ const Beranda = {
       <section id="content" class="content">
         <div class="first-content">
           <div class="img-first-content">
-            <img src="logo-content1.png" alt="image-first-content">
+            <img class="lazyload" src="logo-content1.png" alt="image-first-content">
           </div>
           <div class="description-firts-content">
-            <h2 tabindex="0">APA ITU ZAKAT?</h2>
+            <h2 tabindex="0">APA ITU ZAKAT ?</h2>
             <p tabindex="0">Zakat dalam segi istilah adalah harta tertentu yang wajib dikeluarkan oleh orang yang beragama Islam dan diberikan kepada golongan yang berhak menerimanya (fakir miskin dan sebagainya). Zakat dari segi bahasa berarti 'bersih', 'suci', 'subur', 'berkat' dan 'berkembang'. Menurut ketentuan yang telah ditetapkan oleh syariat Islam. Zakat merupakan rukun ketiga dari rukun Islam.</p>
           </div>
         </div>
@@ -46,14 +46,14 @@ const Beranda = {
           <p tabindex="0">Zakat merupakan salah satu kewajiban yang sudah seharusnya kita tunaikan. Sebagaimana Allah Ta’ala berfirman : “Wahai orang-orang yang beriman, infakkanlah (zakat) sebagian dari hasil usahamu yang baik-baik.” (QS. Al-Baqarah: 267). Zakat merupakan salah satu syari’at Allah yang sudah ada pada zaman dahulu. Orang - orang yang berzakat Allah akan memberikan ketentraman didalam hidupnya dan menjauhkan dari sifat kikir dan bakhil.</p>
         </div>
           <div class="img-second-content">
-            <img src="logo-content2.png" alt="image-second-content">
+            <img class="lazyload" src="logo-content2.png" alt="image-second-content">
           </div>
         </div>
-        <div class="fourth-content">
-          <div class="img-first-content">
-            <img src="logo-content1.png" alt="image-first-content">
+        <div class="third-content">
+          <div class="img-third-content">
+            <img class="lazyload" src="logo-content1.png" alt="image-third-content">
           </div>
-          <div class="description-firts-content">
+          <div class="description-third-content">
             <h2 tabindex="0">SIAPA YANG MENERIMA ZAKAT ?</h2>
             <p tabindex="0">Berdasarkan Q.S At-Taubah ayat 60, terdapat 8 golongan orang yang menerima zakat. Antara lain fakir, miskin, amil, mualaf, riqab, gharimin, fisabilillah, dan ibnu sabil.
             </p>
@@ -70,7 +70,7 @@ const Beranda = {
           </div>
         </div>
         
-        <div class="third-content">
+        <div class="fourth-content">
           <div class="head-text">
             <h2 tabindex="0">ARTIKEL</h2>
           </div>

@@ -132,91 +132,107 @@ main .content .third-content .head-text h2{
 }
 
 
-main .content .third-content .artikel {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 50px;
-}
-
-main .content .third-content .artikel .artikel-item{
-    margin: 10px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-main .content .third-content .artikel .artikel-item img{
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-main .content .third-content .artikel .artikel-item h3{
-    padding: 5px;
-    text-align: center;
-    font-size: 35px;
-    font-family: 'PT Sans', sans-serif;
-    color: #2E4C6D;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-main .content .third-content .artikel .artikel-item span{
-    text-align: justify;
-    font-size: 18px;
-    font-family: Arial;
-    color: #000000;
-}
-main .content .third-content .artikel .artikel-item p{
-    padding: 0 20px 50px 20px;
-    text-align: justify;
-    font-size: 18px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    color: #396EB0;
-}
-
-main .content .fourth-content .description-firts-content{
+main .content .third-content .description-third-content{
     padding-right: 20px !important;
 }
 
-main .content .fourth-content {
+main .content .third-content {
     display: grid;
     grid-template-columns: repeat(2, auto);
     padding: 50px 0;
     text-align: center;
     background-color: #EAEAEA;
-    height: fit-content;
+    height: 100%;
 }
 
-main .content .fourth-content img {
+main .content .third-content img {
     width: 250px;
     padding: 0 100px;
 }
 
-main .content .fourth-content h2 {
+main .content .third-content h2 {
     font-size: 25px;
     font-family: 'PT Sans', sans-serif;
     color: #2E4C6D;
     padding-bottom: 10px;
 }
 
-main .content .fourth-content p {
+main .content .third-content p {
     text-align: center;
     font-size: 18px;
     font-family: 'PT Sans Narrow', sans-serif;
     color: #396EB0;
+    padding-bottom: 10px;
 }
 
-main .content .fourth-content .list-penerima-zakat {
-    text-align: left;
-    font-size: 18px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    color: #396EB0;
-}
-
-main .content .fourth-content .description-firts-content {
+main .content .third-content .description-third-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 100px;
+}
+
+main .content .third-content .description-third-content ul {
+    text-align: left;
+    font-size: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #396EB0;
+}
+
+main .content .third-content .description-third-content ul li{
+    padding-bottom: 3px;
+}
+
+main .content .fourth-content .head-text h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E4C6D;
+}
+
+main .content .fourth-content .artikel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+main .content .fourth-content .artikel .artikel-item .artikel-body{
+    margin: 2%;
+    width: 95%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 9px;
+}
+
+main .content .fourth-content .artikel .artikel-item img{
+    width: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+main .content .fourth-content .artikel .artikel-item .article-item_header {
+    margin-bottom: 20px;
+}
+
+main .content .fourth-content .artikel .artikel-item .article-item_header h3{
+    text-align: center;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E4C6D;
+}
+
+main .content .fourth-content .artikel .artikel-item p{
+    text-align: justify;
+    padding: 5px 15px;;
+    font-size: 13px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #396EB0;
+}
+
+main .content .fourth-content .artikel .artikel-item p span{
+    color: #2E4C6D;
+    font-weight: bold;
 }

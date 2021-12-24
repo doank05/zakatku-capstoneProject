@@ -47,25 +47,17 @@
         font-size: 17px;
     }
 
-    main .content .third-content .head-text h2{
-        font-size: 30px;
-    }
-
-    main .content .fourth-content img {
+    main .content .third-content img {
         width: 200px;
         padding: 0 80px;
     }
     
-    main .content .fourth-content h2 {
+    main .content .third-content h2 {
         font-size: 22px;
     }
     
-    main .content .fourth-content p {
+    main .content .third-content p {
         font-size: 17px;
-    }
-
-    main .content .fourth-content .list-penerima-zakat {
-        font-size: 14px;
     }
 }
 
@@ -96,24 +88,27 @@
     main .content .second-content p {
         font-size: 16px;
     }
-
-    main .content .third-content .artikel {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    main .content .fourth-content img {
-        width: 180px;
-        padding: 0 80px;
+    main .content .third-content img {
+        display: none;
     }
     
-    main .content .fourth-content p {
+    main .content .third-content p {
         font-size: 16px;
+        padding: 10px 15px;
     }
 
-    main .content .fourth-content .list-penerima-zakat {
-        font-size: 14px;
+    main .content .third-content .description-third-content ul {
+        padding-left: 10%;
     }
+
+    main .content .fourth-content .artikel {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main .content .fourth-content .artikel .artikel-item{
+        margin-bottom: 5%;
+    }
+    
 }
 
 @media screen and (max-width: 750px) {
@@ -146,27 +141,20 @@
         text-align: justify;
     }
 
-    main .content .third-content .artikel {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    main .content .third-content p {
+        font-size: 15px;
     }
 
-    main .content .fourth-content .description-firts-content{
-        padding-right: 10px !important;
+    main .content .fourth-content .artikel {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    main .content .fourth-content img {
-        width: 150px;
-        padding: 0 50px;
+    main .content .fourth-content .artikel .artikel-item .article-item_header h3{
+        font-size: 22px;
     }
     
-    main .content .fourth-content p {
-        font-size: 15px;
-        text-align: justify;
-    }
-
-    main .content .fourth-content .list-penerima-zakat {
-        font-size: 14px;
+    main .content .fourth-content .artikel .artikel-item p{
+        font-size: 18px;
     }
 }
 
@@ -191,14 +179,17 @@
     main .application-description p{
         font-size: 16px;
     }
+
+    main .content .fourth-content .artikel .artikel-item .article-item_header h3{
+        font-size: 20px;
+    }
+    
+    main .content .fourth-content .artikel .artikel-item p{
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    main .content .third-content .artikel-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
     main .fitur-description .feature .feature-type {
         padding: 0 10px;
     }
@@ -209,10 +200,6 @@
     
     main .fitur-description .feature p{
         font-size: 12px;
-    }
-
-    main .content .fourth-content .list-penerima-zakat {
-        font-size: 14px;
     }
 }
 
@@ -290,19 +277,16 @@
         font-size: 14px;
     }
 
-    main .content .fourth-content .description-firts-content{
-        padding: 15px;
+    main .content .third-content {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
     }
 
-    main .content .fourth-content img {
-        width: 100px;
+    main .content .fourth-content .artikel .artikel-item .article-item_header h3{
+        font-size: 18px;
     }
     
-    main .content .fourth-content p {
-        font-size: 14px;
-    }
-
-    main .content .fourth-content .list-penerima-zakat {
-        font-size: 14px;
+    main .content .fourth-content .artikel .artikel-item p{
+        font-size: 13px;
     }
 }

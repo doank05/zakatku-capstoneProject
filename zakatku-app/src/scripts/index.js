@@ -10,6 +10,9 @@ import '../styles/responsiveCatatan.css';
 import '../styles/responsiveZakat.css';
 import '../styles/responsiveJenisZakat.css';
 import App from './views/app';
+import swRegister from './utils/sw-register';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const app = new App({
   button: document.querySelector('#hamburgerButton'),
@@ -23,4 +26,5 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
+  swRegister();
 });
